@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Question from './question';
+// import Preview from './previewPage';
 // import Export from './exportPage';
 
 class Create extends Component {
@@ -21,7 +22,8 @@ class Create extends Component {
       <div>
         <div>{this.state.questions}</div>
         <button id="addInput" onClick={this.addInput}>Add Input</button>
-        {/*<Export form={this.state.questions}/>*/}
+        {/*<Preview preview={this.props.preview} />
+        <Export export={this.props.export} />*/}
       </div>
     );
   }

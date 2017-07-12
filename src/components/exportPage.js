@@ -1,22 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Export extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
-  makeObject(obj) {
-    let exported = JSON.stringify(this.props.form)
-    return exported;
-  }
-
-  render() {
+const Export = (props) => {
+    this.props.export = JSON.stringify(this.props.export);
     return (
-      <div>
-        
+      <div id="exportWindow">
+        {this.props.export}
       </div>
-    );
-  }
+    ); 
 }
 
 export default Export;
