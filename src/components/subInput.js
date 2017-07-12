@@ -5,11 +5,10 @@ import { FormControl, Button } from 'react-bootstrap';
 class SubInput extends Component {
   constructor() {
     super();
+    this.addSubInput = this.addSubInput.bind(this);
     this.state = {
       subInputs: []
     }
-
-    this.addSubInput = this.addSubInput.bind(this);
   }
 
   addSubInput(event) {

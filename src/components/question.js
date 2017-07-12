@@ -5,11 +5,10 @@ import SubInput from './subInput'
 class Question extends Component {
 	constructor() {
     super();
+		this.addSubInput = this.addSubInput.bind(this);
     this.state = {
       subInputs: []
     }
-
-    this.addSubInput = this.addSubInput.bind(this);
   }
 
 	addSubInput(event) {

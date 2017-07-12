@@ -3,13 +3,12 @@ import Question from './question';
 // import Export from './exportPage';
 
 class Create extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.addInput = this.addInput.bind(this);
     this.state = {
       questions: []
     }
-
-    this.addInput = this.addInput.bind(this);
   }
 
   addInput(event) {
